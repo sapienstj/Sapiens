@@ -1,4 +1,4 @@
-baseURL = "http://agenciasapiens.netlify.app/"
+baseURL = "https://agenciasapiens.netlify.app/"
 languageCode = "pt"
 title = "Agência Sapiens"
 theme = "alexa"
