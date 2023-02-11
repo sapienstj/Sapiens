@@ -1,0 +1,13 @@
+name = "focus-on-work"
+license = "AGPL-3.0, MIT licenses found"
+licenselink = "https://github.com/kuisec/focus-on-work/blob/main/LICENSE"
+description = "适用于作为主页的 Hugo 主题（Hugo Theme），对移动端十分友好，主题简洁明了，便于展示和集中注意力。"
+homepage = "https://github.com/kuisec/focus-on-work"
+demosite = "https://focus-on-work.netlify.app/"
+tags = ["Simple And Generous", "Flat Design", "Focus On Work","Dark Theme"]
+features = ["Dark Theme","Flat Design"]
+min_version = "0.68.0"
+
+[author]
+  name = "Jinsn"
+  homepage = "https://kuisec.com"

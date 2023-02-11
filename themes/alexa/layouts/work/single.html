@@ -1,0 +1,93 @@
+{{ define "main" }}
+<div class="mb-2 ">
+	<div class="container work-detail__container c-cover mt-2">
+		<div class="c-cover__background background-gradient" data-color="{{ .Params.content_color }}"></div>
+		<img class="c-cover__image" src="{{ .Params.content_image }}" alt="{{ .Title }}" />
+	</div>
+	<style>
+		.projects-link a svg {
+			width: 20px;
+			height: 20px;
+		}
+	</style>
+	<div class="c-content__center pb-1">
+		<h2 class="section__title">{{ .Title }}</h2>
+		<span class="section__subtitle work__subtitle h4 mb-2">{{ .Params.subtitle }}</span>
+		<ul class="c-tags">
+			{{ range split .Params.stack "|" }}
+			<li class="c-tags__item">
+				<span class="c-tags__label">
+					{{ . }}
+				</span>
+			</li>
+			{{ end }}
+		</ul>
+		<div class="container work__container">
+			<div class="flex__content">
+				{{ .Content }}
+				<script>
+					//修改pre.code.span代码行与右间隔失败问题
+					var code_div = document.getElementsByClassName("highlight");
+					if (code_div.length != 0) {
+						for (var di = 0; di < code_div.length; di++) {
+							var code_span = code_div[di].getElementsByTagName("pre")[0].getElementsByTagName("code")[0].children;
+							for (var si = 0; si < code_span.length; si++) {
+								code_span[si].setAttribute("style", "display: block;");
+							}
+						}
+					}
+				</script>
+				<script type="text/javascript" async
+					src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+						//数学支持
+						MathJax.Hub.Config({
+							tex2jax: {
+								inlineMath: [['$', '$'], ['\\(', '\\)']],
+								displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+								processEscapes: true,
+								processEnvironments: true,
+								skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+								TeX: {
+									equationNumbers: { autoNumber: "AMS" },
+									extensions: ["AMSmath.js", "AMSsymbols.js"]
+								}
+							}
+						});
+
+						MathJax.Hub.Queue(function () {
+							var all = MathJax.Hub.getAllJax(), i;
+							for (i = 0; i < all.length; i += 1) {
+								all[i].SourceElement().parentNode.className += ' has-jax';
+							}
+						});
+					</script>
+			</div>
+			<ul class="list__nopadding c-tags justify-start mt-1">
+				{{ if .Params.github_link }}
+				<li class="c-tags__item ">
+					<a class="c-tags__label button py-1" href="{{ .Params.github_link }}" target="_blank">
+						<i class="icon-github"></i> Github
+					</a>
+				</li>
+				{{ end }}
+				{{ if .Params.website_link }}
+				<li class="c-tags__item">
+					<a class="c-tags__label button py-1" href="{{ .Params.website_link }}" target="_blank">
+						<i class="icon-link"></i> 网站链接
+					</a>
+				</li>
+				{{ end }}
+				{{ if .Params.bilibili_link }}
+				<li class="c-tags__item">
+					<a class="c-tags__label button py-1" href="{{ .Params.bilibili_link }}" target="_blank">
+						<i class="icon-bilibili"></i> bilibili
+					</a>
+				</li>
+				{{ end }}
+			</ul>
+		</div>
+
+		{{- partial "social.html" . -}}
+	</div>
+</div>
+{{end}}

@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "pt"
 title = "Agência Sapiens"
-theme = "alexa-portfolio"
+theme = "alexa"
 googleAnalytics = "UA-167869327-1"
 enableRobotsTXT = true
 
