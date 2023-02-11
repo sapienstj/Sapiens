@@ -1,21 +1,34 @@
-baseURL = "http://agenciasapiens.netlify.app/"
-languageCode = "pt"
-title = "Agência Sapiens"
+baseURL = "/"
+languageCode = "zh-cn"
+title = "站点名称"
 theme = "alexa"
-googleAnalytics = "UA-167869327-1"
+# 谷歌分析工具 分析码
+googleAnalytics = ""
+# 爬虫公约
 enableRobotsTXT = true
 
 [params]
-	favicon = "favicon.ico"
-	home_title = "Meet Sapiens"
-	home_subtitle = "Agência Experimental de Publicidade e Propaganda"
-	home_description = "and also has little experience in Mobile development and Design."
-	instagram = "https://instagram.com/sapienstj"
-	blog = "https://sapienstj.netlify.app/"
-	tom = "https://tominformativo.netlify.app/"
-	phone = "0812"
-	email = "sapienstjatendi@gmail.com"
-	location = "Agência Experimental, Campus Tom Jobim"
+	favicon = "/images/fav.svg"
+	author = "Jinsn"
+	home_title = "Hi, I'am XXX"
+	home_subtitle = "主标题"
+	home_description = "主页详细信息"
+	translate_home_description = "Home Details"
+	github = ""
+	bilibili = ""
+	blog = ""
+	phone = "your_PhoneNumber"
+	email = "your_Email"
+	location = "your_Location"
+	button = "去 联 系 我"
+	home = "主页"
+	work = "全部站点"
+	about = "关于我"
+	contact = "联系我"
+	# 选择表单对象，用户填的表单将传递给它（选项只能是 Netlify 或者 FormSpree）
+	forms_object = "Netlify"
+	# Formspree 的表单ID（选填，只有在上一个选项中填写 Formspree 才会有用）
+	form_id = ""
 
 [markup]
   [markup.goldmark]
