@@ -1,0 +1,23 @@
+baseURL = "http://example.org/"
+languageCode = "pt"
+title = "Agência Sapiens"
+theme = "alexa-portfolio"
+googleAnalytics = "UA-167869327-1"
+enableRobotsTXT = true
+
+[params]
+	favicon = "favicon.ico"
+	home_title = "Meet Sapiens"
+	home_subtitle = "Agência Experimental de Publicidade e Propaganda"
+	home_description = "and also has little experience in Mobile development and Design."
+	instagram = "https://instagram.com/sapienstj"
+	blog = "https://sapienstj.netlify.app/"
+	tom = "https://tominformativo.netlify.app/"
+	phone = "0812"
+	email = "sapienstjatendi@gmail.com"
+	location = "Agência Experimental, Campus Tom Jobim"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
