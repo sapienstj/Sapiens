@@ -10,9 +10,9 @@ collections:
     folder: "content/"
     create: true
     fields:
-      - { label: "Title", name: "Texto Maior", widget: "string" }
-      - { label: "Description", name: "Texto Menor", widget: "string" }
-      - { label: "Flavor_textA", name: "Rotação 1", widget: "string" }
-      - { label: "Flavor_textB", name: "Rotação 2", widget: "string" }
-      - { label: "Flavor_textC", name: "Rotação 3", widget: "string" }
-      - { laber: "Hero_img", name: "Imagem", widget: "image" }
+      - { label: "Texto Maior", name: "Title", widget: "string" }
+      - { label: "Texto Menor", name: "Description", widget: "string" }
+      - { label: "Frase 1", name: "Flavor_textA", widget: "string" }
+      - { label: "Frase 2", name: "Flavor_textB", widget: "string" }
+      - { label: "Frase 3", name: "Flavor_textC", widget: "string" }
+      - { laber: "Imagem", name: "Hero_img", widget: "image" }
