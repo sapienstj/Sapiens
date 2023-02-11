@@ -3,6 +3,8 @@ backend:
   branch: main
 media_folder: static/images/
 public_folder: /images/
+# Support Hugo page bundles that puts index.md and images in folders named by slug
+path: "{{slug}}/_index"
 locale: 'pt'
 collections:
   - name: "Home"
