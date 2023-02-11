@@ -1,16 +1,9 @@
 ---
 draft: false
-title: "Starbucks Secret Menu"
-slug: starbucksecret
+title: "PT. Ikhwanul Ikhlas Wisata"
 job_type: "Designed and Developed"
-stack: "Flutter • Firebase"
-website_link: "https://play.google.com/store/apps/details?id=com.bonzdev.starbucksecret"
-github_link: "https://github.com/Bonzdev/Starbuck-Secret-Menu-Flutter"
-color: "#1c6141"
+color: "#38aa11"
 index: 99
 
-thumb_image: "https://res.cloudinary.com/bonzdev/image/upload/c_thumb,w_300/v1622358105/mockup_crop/mobile_starbuck_crop_avybmj.png"
-cover_image: "https://res.cloudinary.com/bonzdev/image/upload/v1622358105/mockup_crop/mobile_starbuck_crop_avybmj.png"
+thumb_image: "https://res.cloudinary.com/bonzdev/image/upload/w_1000,ar_16:9,c_fill,g_auto/v1621922693/mockup_crop/iiw_crop_z7h93m.png"
 ---
-
-Secret Menu application for Starbucks. Made in order to learn flutter with daily projects, friends can get the source code on github. And if you want to see a demo, you can get it on the Playstore, because for now it's only available for the Android version.

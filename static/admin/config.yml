@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: static/images/
+public_folder: /images/
+locale: 'pt'
+collections:
+  - name: "Home"
+    label: "Home"
+    folder: "content/"
+    create: true
+    fields:
+      - { label: "Title", name: "Texto Maior", widget: "string" }
+      - { label: "Description", name: "Texto Menor", widget: "string" }
+      - { label: "Flavor_textA", name: "Rotação 1", widget: "string" }
+      - { label: "Flavor_textB", name: "Rotação 2", widget: "string" }
+      - { label: "Flavor_textC", name: "Rotação 3", widget: "string" }
+      - { laber: "Hero_img", name: "Imagem", widget: "image" }

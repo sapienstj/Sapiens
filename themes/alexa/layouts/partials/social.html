@@ -7,8 +7,26 @@
           <i class="icon-user c-social-links__icon"></i>
         </span>
         <span style="font-weight: bold;">
-          文章作者:
-          <a href="/about" rel="external nofollow noreferrer">{{ .Site.Params.author }}</a>
+          Direção de Arte:
+          <a href="{{ .Params.Com_AuthorA }}" rel="external nofollow noreferrer">{{ .Params.authorA }}</a>
+        </span>
+      </div>
+      <div>
+        <span>
+          <i class="icon-user c-social-links__icon"></i>
+        </span>
+        <span style="font-weight: bold;">
+          Redação:
+          <a href="{{ .Params.Com_AuthorB }}" rel="external nofollow noreferrer">{{ .Params.authorB }}</a>
+        </span>
+      </div>
+      <div>
+        <span>
+          <i class="icon-user c-social-links__icon"></i>
+        </span>
+        <span style="font-weight: bold;">
+          Produção:
+          <a href="{{ .Params.Com_AuthorC }}" rel="external nofollow noreferrer">{{ .Params.authorC }}</a>
         </span>
       </div>
       <div>
@@ -16,56 +34,12 @@
           <i class="icon-time c-social-links__icon"></i>
         </span>
         <span style="font-weight: bold;">
-          首次发布: {{ .Params.first_date }}
-        </span>
-      </div>
-      <div>
-        <span>
-          <i class="icon-time c-social-links__icon"></i>
+          Cliente: {{ .Params.cliente }}
         </span>
         <span style="font-weight: bold;">
-          最后更新: {{ .Params.last_date }}
+          Quer um projeto assim? Manda um alô no nosso<a href="{{ .Site.Params.Instagram }}">instagram</a>.
         </span>
       </div>
-      <div>
-        <span>
-          <i class="icon-copyright c-social-links__icon"></i>
-        </span>
-        <span style="font-weight: bold;">
-          版权声明: 本博客所有文章除特別声明外，均采用
-          <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer"
-            target="_blank">CC BY 4.0</a>
-          许可协议。转载请注明来源！
-        </span>
-      </div>
-    </div>
-
-    <div class="c-social__primary">
-      想了解更多或是查找类似的东西？
-    </div>
-    <div class="c-social__secondary">
-      在线查找或者
-      <a href="/contact">联系我</a>
-    </div>
   </h3>
-  <ul class="c-social-links">
-    <li class="c-social-links__item">
-      <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener">
-        <i class="icon-github c-social-links__icon"></i>
-        <span class="c-social-links__label">Github</span>
-      </a>
-    </li>
-    <li class="c-social-links__item">
-      <a href="{{ .Site.Params.bilibili }}" target="_blank" rel="noopener">
-        <i class="icon-bilibili c-social-links__icon"></i>
-        <span class="c-social-links__label">Bilibili</span>
-      </a>
-    </li>
-    <li class="c-social-links__item">
-      <a href="{{ .Site.Params.blog }}" target="_blank" rel="noopener">
-        <i class="icon-blog c-social-links__icon"></i>
-        <span class="c-social-links__label">Blog</span>
-      </a>
-    </li>
   </ul>
 </div>

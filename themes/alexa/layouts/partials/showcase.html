@@ -1,0 +1,30 @@
+<section class="work section mt-5" id="work">
+  <h2 class="section__title">{{ .Params.Portfolio }}</h2>
+  <span class="section__subtitle work__subtitle h4 mb-1">{{ .Params.PortfolioB }}</span>
+  <div class="c-cases px-3">
+    {{ $portfolioPages := (where .Site.RegularPages "Type" "portfolio") }}
+    {{ $randomPages := shuffle $portfolioPages }}
+    {{ range first 2 $randomPages }}
+      {{ if ne .Title "Portfólio" }}
+        <a
+          href="/portfolio/{{ .Params.slug }}"
+          class="c-case enter-fade-up enter-delay-1 background-gradient"
+          data-color="{{ .Params.color }}"
+        >
+          <div
+            class="c-case__image"
+            style="background-image: url('{{ .Params.thumb_image }}')"
+          >
+          </div>
+          <div class="c-case__info" style="background: {{ .Params.color }}">
+            <div class="c-case__title">{{ .Title }}</div>
+            <div class="c-case__subtitle">{{ .Params.job_type }}</div>
+          </div>
+        </a>
+      {{ end }}
+    {{ end }}
+</div>
+<div style="font-weight: bold; text-align: center;">
+  <a href="/portfolio" class="button button--flex"> Ver Todos </a>
+</div>
+</section>

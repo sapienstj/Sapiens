@@ -1,34 +1,32 @@
-baseURL = "/"
-languageCode = "zh-cn"
-title = "站点名称"
+baseURL = "http://agenciasapiens.netlify.app/"
+languageCode = "pt"
+title = "Agência Sapiens"
 theme = "alexa"
-# 谷歌分析工具 分析码
 googleAnalytics = ""
-# 爬虫公约
 enableRobotsTXT = true
 
 [params]
-	favicon = "/images/fav.svg"
-	author = "Jinsn"
-	home_title = "Hi, I'am XXX"
-	home_subtitle = "主标题"
-	home_description = "主页详细信息"
-	translate_home_description = "Home Details"
-	github = ""
-	bilibili = ""
-	blog = ""
+	favicon = "favicon.ico"
+	author = "Sapiens"
+	home_title = "Meet Sapiens"
+	home_subtitle = "Agência Experimental de Publicidade"
+	instagram = "https://instagram.com/sapienstj"
+	blog = "https://blogsapiens.netlify.app/"
+	tom = "https://tominformativo.netlify.app/"
 	phone = "your_PhoneNumber"
 	email = "your_Email"
 	location = "your_Location"
-	button = "去 联 系 我"
-	home = "主页"
-	work = "全部站点"
-	about = "关于我"
-	contact = "联系我"
-	# 选择表单对象，用户填的表单将传递给它（选项只能是 Netlify 或者 FormSpree）
+	seletiva = false
+	home = "Início"
+	portfolio = "Portfólio"
+	about = "Seletiva"
+	team = "Equipe"
+	contact = "Contato"
+	# Select the form object to which the form filled by the user will be passed (options can only be Netlify or FormSpree)
 	forms_object = "Netlify"
-	# Formspree 的表单ID（选填，只有在上一个选项中填写 Formspree 才会有用）
+	# Form ID of Formspree (optional, only useful if Formspree is filled in the previous option)
 	form_id = ""
+	signature = "https://instagram.com/eubaliver"
 
 [markup]
   [markup.goldmark]
