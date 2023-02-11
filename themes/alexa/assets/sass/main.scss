@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
 @import 'reset';
 @import 'generic';
 @import 'transition';
@@ -6,7 +6,6 @@
 @import 'cover';
 @import 'social';
 @import 'tags';
-@import 'team';
 
 :root {
     --header-height: 3rem;
@@ -131,7 +130,7 @@ a {
 }
 
 .big_text {
-    font-family: Poppins;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 1.25rem;
@@ -139,7 +138,7 @@ a {
 }
 
 .small_text {
-    font-family: Poppins;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 1rem;
@@ -389,7 +388,7 @@ a {
     border-radius: .5rem;
     font-weight: bold;
     border: none;
-    margin-top: none;
+    margin-top: var(--mb-2);
 }
 
 .button__border {
