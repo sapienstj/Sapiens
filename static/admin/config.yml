@@ -10,11 +10,12 @@ collections:
   - name: "Home"
     label: "Home"
     folder: "content/"
-    create: true
+    create: false
     fields:
       - { label: "Texto Maior", name: "Title", widget: "string" }
       - { label: "Texto Menor", name: "Description", widget: "string" }
       - { label: "Frase 1", name: "Flavor_textA", widget: "string" }
       - { label: "Frase 2", name: "Flavor_textB", widget: "string" }
       - { label: "Frase 3", name: "Flavor_textC", widget: "string" }
-      - { laber: "Imagem", name: "Hero_img", widget: "image" }
+      - { label: "Imagem", name: "Hero_img", widget: "image" }
+      - { label: "Bio", name: "body", widget: "markdown"}
