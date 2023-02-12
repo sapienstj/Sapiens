@@ -34,3 +34,9 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Frase 3", name: "flavor_textC", widget: "string" }
           - { label: "Imagem", name: "hero_img", widget: "image" }
           - { label: "Bio", name: "body", widget: "markdown"}
+      - file: "site/content/portfolio/_index.md"
+        label: "Portfólio"
+        name: "portfolio"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Legenda", name: "description", widget: "string" }
