@@ -1,4 +1,4 @@
 ---
 title: "Equipe"
-description : "To get an idea of my work, here are some public projects I worked on. Since I can't show everything here, I'm happy to discuss more of my work in person."
+description : "O nosso motor é gente e aqui você encontra as pessoas que fazem a diferença!"
 ---

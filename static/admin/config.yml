@@ -8,19 +8,28 @@ locale: 'pt'
 collections: # A list of collections the CMS should be able to edit
   - name: "portfolio" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Job" # Used in the UI, ie.: "New Post"
-    folder: "content/posts_portfolio" # The path to the folder where the documents are stored
+    folder: "content/portfolio/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: "Job", name: "title", widget: "string" }
       - { label: "Tipo", name: "job_Type", widget: "string" }
-      - { label: "Cor", name: "color", widget: "color" }
       - { label: "Cliente", name: "cliente", widget: "string" }
-      - { label: "Direção de Arte:", name: "AuthorA", widget: "string" }
-      - { label: "Redação:", name: "AuthorB", widget: "string" }
-      - { label: "Produção", name: "AuthorC", widget: "string" }
+      - { label: "Direção de Arte:", name: "AuthorA", widget: "string", required: false }
+      - { label: "Redação:", name: "AuthorB", widget: "string", required: false }
+      - { label: "Produção", name: "AuthorC", widget: "string", required: false }
       - { label: "Imagem", name: "image", widget: "image" }
       - { label: "Conteúdo", name: "body", widget: "markdown"}
+  - name: "Equipe" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Pessoa" # Used in the UI, ie.: "New Post"
+    folder: "content/equipe/pessoas" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: "Nome", name: "title", widget: "string" }
+      - { label: "Área", name: "area", widget: "string" }
+      - { label: "Foto", name: "foto", widget: "image" }
   - name: "Páginas"
+    editor:
+      preview: false
     label: "Pages"
     files:
       - file: "content/_index.md"
@@ -31,7 +40,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Texto Menor", name: "description", widget: "string" }
           - { label: "Frase 1", name: "flavor_textA", widget: "string" }
           - { label: "Frase 2", name: "flavor_textB", widget: "string" }
-          - { label: "Frase 3", name: "flavor_textC", widget: "string" }
+          - { label: "Frase 3", name: "flavor_textC", widget: "string", required: false }
           - { label: "Imagem", name: "hero_img", widget: "image" }
           - { label: "Bio", name: "body", widget: "markdown"}
       - file: "content/portfolio/_index.md"
@@ -46,3 +55,9 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Legenda", name: "body", widget: "markdown" }
+      - file: "content/equipe/_index.md"
+        label: "Equipe"
+        name: "equipe"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Legenda", name: "description", widget: "markdown" }
