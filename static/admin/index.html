@@ -16,14 +16,12 @@
         fromBlock: match =>
           match && {
             image: match[1],
-            alt: match[2],
-            title: match[3]
           },
-        toBlock: function({image, alt, title}, getAsset, fields) {
-          return `<img src="${image || ''}" alt="${alt || ''}" title="${title || ''}" class="c-cover__image"/>`
+        toBlock: function({image}, getAsset, fields) {
+          return `<img src="${image || ''}" class="c-cover__image"/>`
         },
-        toPreview: ({ image, alt, title }, getAsset, fields) => {
-          return `<img src="${image}" alt="${alt}" title="${title}" class="c-cover__image"/>`;
+        toPreview: ({ image }, getAsset, fields) => {
+          return `<img src="${image}" class="c-cover__image"/>`;
         },
         pattern:  /^<img src="(.*?)" alt="(.*?)" title="(.*?)" class="(.*?)"\/>$/s,
         fields: [
@@ -34,17 +32,10 @@
             media_library: {
               allow_multiple: false,
             },
-          },
-          {
-            label: 'Alt Text',
-            name: 'alt',
-          },
-          {
-            label: 'Title',
-            name: 'title',
-          },
+          }
         ]
       });
+
   </script>
   <script>
   CMS.registerEditorComponent({
