@@ -10,6 +10,43 @@
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   <script>
+    CMS.registerEditorComponent({
+        label: 'Image',
+        id: 'image',
+        fromBlock: match =>
+          match && {
+            image: match[1],
+            alt: match[2],
+            title: match[3]
+          },
+        toBlock: function({image, alt, title}, getAsset, fields) {
+          return `<img src="${image || ''}" alt="${alt || ''}" title="${title || ''}" class="c-cover__image"/>`
+        },
+        toPreview: ({ image, alt, title }, getAsset, fields) => {
+          return `<img src="${image}" alt="${alt}" title="${title}" class="c-cover__image"/>`;
+        },
+        pattern:  /^<img src="(.*?)" alt="(.*?)" title="(.*?)" class="(.*?)"\/>$/s,
+        fields: [
+          {
+            label: 'Picture',
+            name: 'image',
+            widget: 'image',
+            media_library: {
+              allow_multiple: false,
+            },
+          },
+          {
+            label: 'Alt Text',
+            name: 'alt',
+          },
+          {
+            label: 'Title',
+            name: 'title',
+          },
+        ]
+      });
+  </script>
+  <script>
   CMS.registerEditorComponent({
     id: "youtube",
     label: "Youtube",
