@@ -40,3 +40,9 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Legenda", name: "description", widget: "string" }
+      - file: "site/content/seletiva/_index.md"
+        label: "Seletiva"
+        name: "seletiva"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Legenda", name: "body", widget: "string" }

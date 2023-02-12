@@ -1,6 +1,5 @@
 ---
 title: "Seletiva"
-subtitle:
 ---
 Olá, futuro publicitário divertido!
 
