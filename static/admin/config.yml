@@ -6,9 +6,9 @@ public_folder: /images/
 # Support Hugo page bundles that puts index.md and images in folders named by slug
 locale: 'pt'
 collections: # A list of collections the CMS should be able to edit
-  - name: "Itens" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Item" # Used in the UI, ie.: "New Post"
-    folder: "content/items_portfolio" # The path to the folder where the documents are stored
+  - name: "portfolio" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Job" # Used in the UI, ie.: "New Post"
+    folder: "content/posts_portfolio" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: "Job", name: "title", widget: "string" }
@@ -39,7 +39,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "portfolio"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Legenda", name: "description", widget: "string" }
+          - { label: "Legenda", name: "description", widget: "markdown" }
       - file: "content/seletiva/_index.md"
         label: "Seletiva"
         name: "seletiva"
