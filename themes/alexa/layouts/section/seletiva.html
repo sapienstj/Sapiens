@@ -12,7 +12,7 @@
     </div>
     {{ if eq .Site.Params.forms_object "Netlify" }}
     <!-- Netlify forms -->
-    <form name="contact" action="" method="post" class="contact__form grid" data-netlify="true">
+    <form name="contact" action="/successo" method="post" class="contact__form grid" data-netlify="true">
     {{ else if eq .Site.Params.forms_object "Formspree" }}
     <!-- Formspree forms -->
     <form name="contact" action="https://formspree.io/f/{{ .Site.Params.form_id }}" class="contact__form grid" method="post">
@@ -36,7 +36,7 @@
         </div>
         <div>
           <button type="submit" class="button button--flex">Enviar<i
-              class="icon-telegram button__icon"></i><uil-message class="button__icon" /></button>
+              class="fas fa-paper-plane button__icon"></i><uil-message class="button__icon" /></button>
         </div>
       </div>
     </form>

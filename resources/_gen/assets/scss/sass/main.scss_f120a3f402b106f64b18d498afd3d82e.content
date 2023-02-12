@@ -774,7 +774,7 @@ a {
     transition: .3s; } }
 
 .nav__list {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem; }
 
 .nav__link {
@@ -1211,3 +1211,10 @@ section {
   100% {
     opacity: 1;
     transform: translate(0px, 0px); } }
+
+@media only screen and (min-width: 992px) {
+  .fa {
+    display: none; } }
+
+.some {
+  display: none; }

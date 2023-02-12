@@ -6,12 +6,12 @@ googleAnalytics = ""
 enableRobotsTXT = true
 
 [params]
-	favicon = "favicon.ico"
+	favicon = "/favicon.ico"
 	author = "Sapiens"
 	home_title = "Meet Sapiens"
 	home_subtitle = "Agência Experimental de Publicidade"
 	instagram = "https://instagram.com/sapienstj"
-	blog = "https://blogsapiens.netlify.app/"
+	blog = "https://sapiens.netlify.app/"
 	tom = "https://tominformativo.netlify.app/"
 	phone = "your_PhoneNumber"
 	email = "your_Email"

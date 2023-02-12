@@ -7,15 +7,16 @@
 </style>
 <body>
 <section class="about section mt-5" id="about">
-    <h3 class="section__title">Página não encontrada!</h3>
+    <h3 class="section__title">Tudo certo! Já Recebemos aqui!</h3>
 </section>
 
         <div class="img">
-            <img src="/images/404.svg" alt="404" class="vector" />
+            <img src="/images/success.svg" alt="sucesso" class="vector" />
         </div>
         <div class="logo" id="jump" style="text-align: center; margin: 0;" onclick="backHistory()"></div>
     </section>
     </div>
+
     <script>
         var div = document.getElementById("jump");
         var timer = 5;
@@ -34,7 +35,7 @@
                 div.innerHTML = 'Você será mandado pra terra em ' + timer + ' segundos!<br/>（Clique para ir agora）';
                 timer--;
             }
-        }, 1000)
+        }, 5000)
     </script>
 </body>
 {{ end }}

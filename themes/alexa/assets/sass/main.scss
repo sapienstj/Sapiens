@@ -8,6 +8,8 @@
 @import 'tags';
 @import 'team';
 
+
+
 :root {
     --header-height: 3rem;
 
@@ -253,7 +255,7 @@ a {
 }
 
 .nav__list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
@@ -872,3 +874,10 @@ section {
         transform: translate(0px, 0px);
     }
 }
+@media only screen and (min-width: 992px) {
+    .fa {
+      display: none;
+    }
+  }
+
+@import 'custom';
