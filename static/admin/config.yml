@@ -16,7 +16,7 @@ collections:
       - { label: "Texto Menor", name: "description", widget: "string" }
       - { label: "Frase 1", name: "flavor_textA", widget: "string" }
       - { label: "Frase 2", name: "flavor_textB", widget: "string" }
-      - { label: "Frase 3", name: "flavor_textC", widget: "string", required: "false" }
+      - { label: "Frase 3", name: "flavor_textC", widget: "string" }
       - { label: "Imagem", name: "hero_img", widget: "image" }
       - { label: "Bio", name: "body", widget: "markdown"}
 
@@ -38,7 +38,7 @@ collections:
       - { label: "Cor", name: "color", widget: "color" }
       - { label: "Cliente", name: "cliente", widget: "string" }
       - { label: "Direção de Arte:", name: "AuthorA", widget: "string" }
-      - { label: "Redação:", name: "AuthorB", widget: "string" , required: "false"}      
-      - { label: "Produção", name: "AuthorC", widget: "string" , required: "false"}
+      - { label: "Redação:", name: "AuthorB", widget: "string" }      
+      - { label: "Produção", name: "AuthorC", widget: "string" }
       - { label: "Imagem", name: "image", widget: "image" }
       - { label: "Conteúdo", name: "body", widget: "markdown"}
