@@ -815,7 +815,7 @@ a {
 
 .home__content {
   grid-template-columns: .5fr 3fr;
-  padding-top: 3.5rem;
+  padding-top: 1.5rem;
   align-items: center; }
 
 .home__social {
@@ -881,7 +881,7 @@ a {
   border-radius: .5rem;
   font-weight: bold;
   border: none;
-  margin-top: var(--mb-2); }
+  /*margin-top: var(--mb-2);*/ }
 
 .button__border {
   background-color: var(--container-color);

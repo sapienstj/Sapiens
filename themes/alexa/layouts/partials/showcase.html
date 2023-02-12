@@ -1,7 +1,7 @@
-<section class="work section" id="work">
+<section class="work section" style="padding-top:0;" id="work">
   <h2 class="section__title">{{ .Params.Portfolio }}</h2>
   <span class="section__subtitle work__subtitle h4 mb-1">{{ .Params.PortfolioB }}</span>
-  <div class="c-cases px-3">
+  <div class="c-cases px-3" style="margin:3.2rem auto 3.2rem">
     {{ $portfolioPages := (where .Site.RegularPages "Type" "portfolio") }}
     {{ $randomPages := shuffle $portfolioPages }}
     {{ range first 2 $randomPages }}
