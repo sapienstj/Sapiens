@@ -1,5 +1,5 @@
 ---
 title: Matheus Oliveira
 area: Direção de Arte
-foto: /images/foto-matheus.png
+foto: /images/matheus-oliveira.png
 ---
