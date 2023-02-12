@@ -881,7 +881,7 @@ a {
   border-radius: .5rem;
   font-weight: bold;
   border: none;
-  margin-top: none; }
+  margin-top: var(--mb-2); }
 
 .button__border {
   background-color: var(--container-color);
