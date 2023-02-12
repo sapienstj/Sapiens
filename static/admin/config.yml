@@ -10,7 +10,7 @@ collections:
   - name: "Páginas"
     label: "Páginas"
     files:
-      - file: "site/content/_index.md"
+      - file: "/content/_index.md"
         label: "Home"
         name: "home"
         create: false
@@ -23,14 +23,13 @@ collections:
           - { label: "Imagem", name: "hero_img", widget: "image" }
           - { label: "Bio", name: "body", widget: "markdown"}
 
-      - file: "site/portfolio/_index.md"
+      - file: "/portfolio/_index.md"
         label: "Portfólio"
         name: "Portfólio"
         create: false        
         fields:
           - { label: "Texto Maior", name: "title", widget: "string" }
           - { label: "Texto Menor", name: "description", widget: "string" }
-
 
       - name: "Itens do Portfólio"
         label: "Jobs"
