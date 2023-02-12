@@ -533,7 +533,7 @@ a.c-tags__label:hover {
       transform: translateY(1.2rem); }
 
 .c-team__image {
-  background-position: right -4rem bottom;
+  background-position: 0;
   background-repeat: no-repeat;
   background-size: auto 105%;
   bottom: 0;
