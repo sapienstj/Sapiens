@@ -4,41 +4,45 @@ backend:
 media_folder: static/images/
 public_folder: /images/
 # Support Hugo page bundles that puts index.md and images in folders named by slug
-path: "{{slug}}/_index"
 locale: 'pt'
 collections:
-  - name: "Texto Home"
-    label: "Home"
-    folder: "content/_index.md"
-    create: false
-    fields:
-      - { label: "Texto Maior", name: "title", widget: "string" }
-      - { label: "Texto Menor", name: "description", widget: "string" }
-      - { label: "Frase 1", name: "flavor_textA", widget: "string" }
-      - { label: "Frase 2", name: "flavor_textB", widget: "string" }
-      - { label: "Frase 3", name: "flavor_textC", widget: "string" }
-      - { label: "Imagem", name: "hero_img", widget: "image" }
-      - { label: "Bio", name: "body", widget: "markdown"}
 
-  - name: "Texto Portfólio"
-    label: "Texto Portfólio"
-    folder: "content/portfolio/_index.md"
-    create: false
-    fields:
-      - { label: "Texto Maior", name: "title", widget: "string" }
-      - { label: "Texto Menor", name: "description", widget: "string" }
+  - name: "Páginas"
+    label: "Páginas"
+    files:
+      - file: "site/content/_index.md"
+        label: "Home"
+        name: "home"
+        create: false
+        fields:
+          - { label: "Texto Maior", name: "title", widget: "string" }
+          - { label: "Texto Menor", name: "description", widget: "string" }
+          - { label: "Frase 1", name: "flavor_textA", widget: "string" }
+          - { label: "Frase 2", name: "flavor_textB", widget: "string" }
+          - { label: "Frase 3", name: "flavor_textC", widget: "string" }
+          - { label: "Imagem", name: "hero_img", widget: "image" }
+          - { label: "Bio", name: "body", widget: "markdown"}
 
-  - name: "Portfólio"
-    label: "Portfólio"
-    folder: "content/portfolio/"
-    create: true
-    fields:
-      - { label: "Job", name: "title", widget: "string" }
-      - { label: "Tipo", name: "job_Type", widget: "string" }
-      - { label: "Cor", name: "color", widget: "color" }
-      - { label: "Cliente", name: "cliente", widget: "string" }
-      - { label: "Direção de Arte:", name: "AuthorA", widget: "string" }
-      - { label: "Redação:", name: "AuthorB", widget: "string" }      
-      - { label: "Produção", name: "AuthorC", widget: "string" }
-      - { label: "Imagem", name: "image", widget: "image" }
-      - { label: "Conteúdo", name: "body", widget: "markdown"}
+      - file: "site/portfolio/_index.md"
+        label: "Portfólio"
+        name: "Portfólio"
+        create: false        
+        fields:
+          - { label: "Texto Maior", name: "title", widget: "string" }
+          - { label: "Texto Menor", name: "description", widget: "string" }
+
+
+      - name: "Itens do Portfólio"
+        label: "Jobs"
+        folder: "content/portfolio/"
+        create: true
+        fields:
+          - { label: "Job", name: "title", widget: "string" }
+          - { label: "Tipo", name: "job_Type", widget: "string" }
+          - { label: "Cor", name: "color", widget: "color" }
+          - { label: "Cliente", name: "cliente", widget: "string" }
+          - { label: "Direção de Arte:", name: "AuthorA", widget: "string" }
+          - { label: "Redação:", name: "AuthorB", widget: "string" }      
+          - { label: "Produção", name: "AuthorC", widget: "string" }
+          - { label: "Imagem", name: "image", widget: "image" }
+          - { label: "Conteúdo", name: "body", widget: "markdown"}
