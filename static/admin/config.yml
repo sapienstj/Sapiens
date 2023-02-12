@@ -5,9 +5,9 @@ media_folder: static/images/
 public_folder: /images/
 # Support Hugo page bundles that puts index.md and images in folders named by slug
 locale: 'pt'
-collections:
-  - name: "portfolio" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Item de Portfólio" # Used in the UI, ie.: "New Post"
+collections: # A list of collections the CMS should be able to edit
+  - name: "Itens" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Item" # Used in the UI, ie.: "New Post"
     folder: "content/portfolio" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -16,17 +16,17 @@ collections:
       - { label: "Cor", name: "color", widget: "color" }
       - { label: "Cliente", name: "cliente", widget: "string" }
       - { label: "Direção de Arte:", name: "AuthorA", widget: "string" }
-      - { label: "Redação:", name: "AuthorB", widget: "string" }      
+      - { label: "Redação:", name: "AuthorB", widget: "string" }
       - { label: "Produção", name: "AuthorC", widget: "string" }
       - { label: "Imagem", name: "image", widget: "image" }
       - { label: "Conteúdo", name: "body", widget: "markdown"}
   - name: "pages"
-    label: "Páginas"
+    label: "Pages"
     files:
-      - file: "content/_index.md"
+      - file: "site/content/_index.md"
         label: "Home Page"
         name: "home"
-        create: false
+        fields:
           - { label: "Texto Maior", name: "title", widget: "string" }
           - { label: "Texto Menor", name: "description", widget: "string" }
           - { label: "Frase 1", name: "flavor_textA", widget: "string" }
@@ -34,11 +34,3 @@ collections:
           - { label: "Frase 3", name: "flavor_textC", widget: "string" }
           - { label: "Imagem", name: "hero_img", widget: "image" }
           - { label: "Bio", name: "body", widget: "markdown"}
-
-      - file: "content/portfolio/_index.md"
-        label: "Portfólio"
-        name: "Portfólio"
-        create: false        
-        fields:
-          - { label: "Texto Maior", name: "title", widget: "string" }
-          - { label: "Texto Menor", name: "description", widget: "string" }
