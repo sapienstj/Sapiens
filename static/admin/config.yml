@@ -23,7 +23,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "Páginas"
     label: "Pages"
     files:
-      - file: "site/content/_index.md"
+      - file: "content/_index.md"
         label: "Home Page"
         name: "home"
         fields:
@@ -34,13 +34,13 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Frase 3", name: "flavor_textC", widget: "string" }
           - { label: "Imagem", name: "hero_img", widget: "image" }
           - { label: "Bio", name: "body", widget: "markdown"}
-      - file: "site/content/portfolio/_index.md"
+      - file: "content/portfolio/_index.md"
         label: "Portfólio"
         name: "portfolio"
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Legenda", name: "description", widget: "string" }
-      - file: "site/content/seletiva/_index.md"
+      - file: "content/seletiva/_index.md"
         label: "Seletiva"
         name: "seletiva"
         fields:
