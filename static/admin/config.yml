@@ -7,7 +7,7 @@ public_folder: /images/
 path: "{{slug}}/_index"
 locale: 'pt'
 collections:
-  - name: "Configurações"
+  - name: "Texto Home"
     label: "Home"
     folder: "content/_index.md"
     create: false
@@ -20,6 +20,7 @@ collections:
       - { label: "Imagem", name: "hero_img", widget: "image" }
       - { label: "Bio", name: "body", widget: "markdown"}
 
+  - name: "Texto Portfólio"
     label: "Texto Portfólio"
     folder: "content/portfolio/_index.md"
     create: false
