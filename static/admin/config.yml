@@ -6,15 +6,6 @@ public_folder: /images/
 # Support Hugo page bundles that puts index.md and images in folders named by slug
 locale: 'pt'
 collections: # A list of collections the CMS should be able to edit
-  - name: "Configurações"
-    label: "Configurações"
-    format: toml-frontmatter  #<--------------------------- Workaround
-    files:
-      - name: "Seletiva"
-        label: "Seletiva"
-        file: "config.toml"
-        fields:
-          - {label: "Inscrições Abertas", name: "seletiva", widget: "boolean"}
   - name: "portfolio" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Job" # Used in the UI, ie.: "New Post"
     folder: "content/portfolio/posts" # The path to the folder where the documents are stored
