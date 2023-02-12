@@ -45,4 +45,4 @@ collections: # A list of collections the CMS should be able to edit
         name: "seletiva"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Legenda", name: "body", widget: "string" }
+          - { label: "Legenda", name: "body", widget: "markdown" }
