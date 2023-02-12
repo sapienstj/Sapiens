@@ -3,31 +3,34 @@
 
     <div class="reprint">
       <div>
+        {{ if .Params.authorA }}
         <span>
           <i class="icon-user c-social-links__icon"></i>
         </span>
         <span style="font-weight: bold;">
-          Direção de Arte:
-          <a href="{{ .Params.Com_AuthorA }}" rel="external nofollow noreferrer">{{ .Params.authorA }}</a>
+          Produção: {{ .Params.authorA }}</a>
         </span>
+      {{ end }}
       </div>
       <div>
+        {{ if .Params.authorB }}
         <span>
           <i class="icon-user c-social-links__icon"></i>
         </span>
         <span style="font-weight: bold;">
-          Redação:
-          <a href="{{ .Params.Com_AuthorB }}" rel="external nofollow noreferrer">{{ .Params.authorB }}</a>
+          Produção: {{ .Params.authorB }}</a>
         </span>
+      {{ end }}
       </div>
       <div>
+        {{ if .Params.authorC }}
         <span>
           <i class="icon-user c-social-links__icon"></i>
         </span>
         <span style="font-weight: bold;">
-          Produção:
-          <a href="{{ .Params.Com_AuthorC }}" rel="external nofollow noreferrer">{{ .Params.authorC }}</a>
+          Produção: {{ .Params.authorC }}</a>
         </span>
+      {{ end }}
       </div>
       <div>
         <span>

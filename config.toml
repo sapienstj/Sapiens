@@ -27,6 +27,8 @@ enableRobotsTXT = true
 	# Form ID of Formspree (optional, only useful if Formspree is filled in the previous option)
 	form_id = ""
 	signature = "https://instagram.com/eubaliver"
+	[permalinks]
+  	posts = "/posts/:filename/"
 
 [markup]
   [markup.goldmark]
