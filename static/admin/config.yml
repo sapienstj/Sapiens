@@ -6,35 +6,14 @@ public_folder: /images/
 # Support Hugo page bundles that puts index.md and images in folders named by slug
 locale: 'pt'
 collections: # A list of collections the CMS should be able to edit
-  - name: "portfolio" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Job" # Used in the UI, ie.: "New Post"
-    folder: "content/portfolio/posts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - { label: "Job", name: "title", widget: "string" }
-      - { label: "Tipo", name: "job_Type", widget: "string" }
-      - { label: "Cliente", name: "cliente", widget: "string" }
-      - { label: "Direção de Arte:", name: "AuthorA", widget: "string", required: false }
-      - { label: "Redação:", name: "AuthorB", widget: "string", required: false }
-      - { label: "Produção", name: "AuthorC", widget: "string", required: false }
-      - { label: "Imagem", name: "image", widget: "image" }
-      - { label: "Conteúdo", name: "body", widget: "markdown"}
-  - name: "Equipe" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Pessoa" # Used in the UI, ie.: "New Post"
-    folder: "content/equipe/pessoas" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - { label: "Nome", name: "title", widget: "string" }
-      - { label: "Área", name: "area", widget: "string" }
-      - { label: "Foto", name: "foto", widget: "image" }
   - name: "Páginas"
     editor:
       preview: false
-    label: "Pages"
+    label: "Páginas"
     files:
       - file: "content/_index.md"
-        label: "Home Page"
-        name: "home"
+        label: "Landing"
+        name: "landing"
         fields:
           - { label: "Texto Maior", name: "title", widget: "string" }
           - { label: "Texto Menor", name: "description", widget: "string" }
@@ -54,10 +33,33 @@ collections: # A list of collections the CMS should be able to edit
         name: "seletiva"
         fields:
           - { label: "Título", name: "title", widget: "string" }
-          - { label: "Legenda", name: "body", widget: "markdown" }
+          - { label: "Descrição", name: "body", widget: "markdown" }
       - file: "content/equipe/_index.md"
         label: "Equipe"
         name: "equipe"
         fields:
           - { label: "Título", name: "title", widget: "string" }
           - { label: "Legenda", name: "description", widget: "markdown" }
+  - name: "portfolio" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Jobs" # Used in the UI, ie.: "New Post"
+    label_singular: "Job"
+    folder: "content/portfolio/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: "Job", name: "title", widget: "string" }
+      - { label: "Tipo", name: "job_Type", widget: "string" }
+      - { label: "Cliente", name: "cliente", widget: "string" }
+      - { label: "Direção de Arte:", name: "AuthorA", widget: "string", required: false }
+      - { label: "Redação:", name: "AuthorB", widget: "string", required: false }
+      - { label: "Produção", name: "AuthorC", widget: "string", required: false }
+      - { label: "Imagem", name: "image", widget: "image" }
+      - { label: "Conteúdo", name: "body", widget: "markdown"}
+  - name: "Equipe" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Pessoas" # Used in the UI, ie.: "New Post"
+    label_singular: "Pessoa"
+    folder: "content/equipe/pessoas" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: "Nome", name: "title", widget: "string" }
+      - { label: "Área", name: "area", widget: "string" }
+      - { label: "Foto", name: "foto", widget: "image" }
