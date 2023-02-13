@@ -46,7 +46,9 @@ collections: # A list of collections the CMS should be able to edit
     folder: "content/portfolio/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     filter:
-      pattern: "((?!_index).)*$" # Ignore files that match this pattern
+      - name: "index"
+        pattern: "_index.md"
+        reverse: true 
     fields: # The fields each document in this collection have
       - { label: "Job", name: "title", widget: "string" }
       - { label: "Tipo", name: "job_Type", widget: "string" }
