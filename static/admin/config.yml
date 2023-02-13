@@ -65,7 +65,8 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Foto", name: "foto", widget: "image" }
   - name: "settings" # Collection name
     label: "Configurações" # Display label
-    folder: "data" # The path to the folder where the .toml files are stored
+    folder: "data" # The path to the folder where the files are stored
+    extension: yml
     create: false # Set to false to disable creation of new entries
     delete: false # Set to false to disable deletion of entries
     editor:
