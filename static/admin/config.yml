@@ -70,4 +70,4 @@ collections: # A list of collections the CMS should be able to edit
         label: "Configurações"
         name: "settings"
         fields:
-          - { label: "Seletiva", name: "seletiva", widget: "boolean", default: true } # The field for editing the seletiva variable
+          - { label: "Seletiva", name: "seletiva", widget: "boolean", default: false } # The field for editing the seletiva variable
