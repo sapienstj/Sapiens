@@ -64,8 +64,13 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Área", name: "area", widget: "string" }
       - { label: "Foto", name: "foto", widget: "image" }
   - name: "config"
-    label: "Seletiva"
-    folder: "."
+    editor:
+      preview: false
+    label: "Opções"
+    folder : "."
     create: false
-    fields:
-      - {label: "Seletiva", name: "params.seletiva", widget: "string"}
+    files:
+      - file: "config.toml"
+        label: "Seletiva"
+        fields:
+           - {label: "Seletiva", name: "params.seletiva", widget: "string"}
