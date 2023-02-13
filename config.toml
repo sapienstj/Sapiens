@@ -17,6 +17,7 @@ enableRobotsTXT = true
 	email = "your_Email"
 	location = "your_Location"
 	home = "Início"
+	seletiva = true
 	portfolio = "Portfólio"
 	about = "Seletiva"
 	team = "Equipe"
@@ -33,9 +34,3 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-
-data = ["."]
-
-[data.mydata]
-  type = "yaml"
-  path = "data/mydata.yml"
