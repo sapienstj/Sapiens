@@ -45,6 +45,8 @@ collections: # A list of collections the CMS should be able to edit
     label_singular: "Job"
     folder: "content/portfolio/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    filter:
+      pattern: "!_index.md" # Ignore files that match this pattern
     fields: # The fields each document in this collection have
       - { label: "Job", name: "title", widget: "string" }
       - { label: "Tipo", name: "job_Type", widget: "string" }
@@ -63,11 +65,3 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Nome", name: "title", widget: "string" }
       - { label: "Área", name: "area", widget: "string" }
       - { label: "Foto", name: "foto", widget: "image" }
-  - name: "settings" # Collection name
-    label: "Seletiva" # Display label
-    files:
-      - file: ".config.toml"
-        label: "Configurações"
-        name: "Modo Seletiva "
-        fields:
-          - { label: "Seletiva", name: "seletiva", widget: "boolean", default: false } # The field for editing the seletiva variable
