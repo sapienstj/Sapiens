@@ -68,4 +68,4 @@ collections: # A list of collections the CMS should be able to edit
     folder: "."
     create: false
     fields:
-      - {label: "Seletiva", name: "seletiva", widget: "boolean"}
+      - {label: "Seletiva", name: "params.seletiva", widget: "boolean"}
