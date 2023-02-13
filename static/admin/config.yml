@@ -63,9 +63,12 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Nome", name: "title", widget: "string" }
       - { label: "Área", name: "area", widget: "string" }
       - { label: "Foto", name: "foto", widget: "image" }
-  - name: "variables" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Opções" # Used in the UI, ie.: "New Post"
-    folder: "Data" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Seletiva", name: "seletiva", widget: "boolean", default: true}
+  - name: "settings" # Collection name
+    label: "Configurações" # Display label
+    folder: "data" # The path to the folder where the .toml files are stored
+    create: false # Set to false to disable creation of new entries
+    delete: false # Set to false to disable deletion of entries
+    editor:
+      preview: false
+    fields:
+      - { label: "Seletiva", name: "seletiva", widget: "boolean", default: true } # The field for editing the seletiva variable
