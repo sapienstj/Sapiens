@@ -15,10 +15,12 @@
           <a href="/equipe" class="small_text nav__link nav_item--active"><i class="fas fa-users nav__icon"></i>{{
             .Site.Params.team }}</a>
         </li>
+        {{ if .Site.Params.seletiva }}
         <li class="nav__item">
           <a href="/seletiva" class="small_text nav__link nav_item--active"><i class="fas fa-plus nav__icon"></i>{{
             .Site.Params.about }}</a>
         </li>
+        {{ end }}
       </ul>
       <div>
         <i class="icon-xmark nav__close" id="nav-close"></i>
