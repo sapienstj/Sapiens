@@ -63,3 +63,9 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Nome", name: "title", widget: "string" }
       - { label: "Área", name: "area", widget: "string" }
       - { label: "Foto", name: "foto", widget: "image" }
+  - name: "Seletiva"
+    label: "Configuração"
+    folder: "."
+    create: false
+    fields:
+      - {label: "Seletiva", name: "seletiva", widget: "boolean"}
