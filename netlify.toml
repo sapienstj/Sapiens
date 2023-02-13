@@ -1,6 +1,0 @@
-[build]
-  command = "hugo"
-  publish = "public"
-
-[[plugins]]
-  package = "netlify-plugin-hugo-data-folder"

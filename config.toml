@@ -33,3 +33,9 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+data = ["."]
+
+[data.mydata]
+  type = "yaml"
+  pattern = "data/*.yml"
