@@ -68,6 +68,6 @@ collections: # A list of collections the CMS should be able to edit
       preview: false
     label: "Opções"
     folder: "."
-    create: false
+    file: "config.toml"
     fields:
       - {label: "Seletiva", name: "params.seletiva", widget: "string", default: true}
