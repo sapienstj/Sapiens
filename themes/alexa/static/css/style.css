@@ -73,3 +73,8 @@
 .icon-xmark:before {
   content: "\e90f";
 }
+
+b, strong {
+  font-weight: 700;
+  color: var(--first-color);
+}
