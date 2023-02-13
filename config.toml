@@ -15,7 +15,6 @@ enableRobotsTXT = true
 	tom = "https://tominformativo.netlify.app/"
 	phone = "your_PhoneNumber"
 	email = "your_Email"
-	seletiva = true
 	location = "your_Location"
 	home = "Início"
 	portfolio = "Portfólio"
@@ -34,11 +33,3 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-
-staticDirs = ["static"]
-
-[backends]
-  [backends.git-gateway]
-    branch = "master"
-    config = "config.toml"
-    name = "config"
