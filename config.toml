@@ -8,7 +8,7 @@ enableRobotsTXT = true
 [params]
 	favicon = "/favicon.ico"
 	author = "Sapiens"
-	home_title = "Conheça Sapiens"
+	home_title = "Meet Sapiens"
 	home_subtitle = "Agência Experimental de Publicidade"
 	instagram = "https://instagram.com/sapienstj"
 	blog = "https://sapiens.netlify.app/"
