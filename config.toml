@@ -38,4 +38,4 @@ data = ["."]
 
 [data.mydata]
   type = "yaml"
-  pattern = "data/*.yml"
+  path = "data/mydata.yml"
