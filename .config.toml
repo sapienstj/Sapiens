@@ -1,1 +1,36 @@
-seletiva = true
+baseURL = "https://agenciasapiens.netlify.app/"
+languageCode = "pt"
+title = "Agência Sapiens"
+theme = "alexa"
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[params]
+	favicon = "/favicon.ico"
+	author = "Sapiens"
+	home_title = "Meet Sapiens"
+	home_subtitle = "Agência Experimental de Publicidade"
+	instagram = "https://instagram.com/sapienstj"
+	blog = "https://sapiens.netlify.app/"
+	tom = "https://tominformativo.netlify.app/"
+	phone = "your_PhoneNumber"
+	email = "your_Email"
+	location = "your_Location"
+	home = "Início"
+	seletiva = false
+	portfolio = "Portfólio"
+	about = "Seletiva"
+	team = "Equipe"
+	contact = "Contato"
+	# Select the form object to which the form filled by the user will be passed (options can only be Netlify or FormSpree)
+	forms_object = "Netlify"
+	# Form ID of Formspree (optional, only useful if Formspree is filled in the previous option)
+	form_id = ""
+	signature = "https://instagram.com/eubaliver"
+	[permalinks]
+  	posts = "/:filename/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
