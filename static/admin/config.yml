@@ -43,7 +43,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "portfolio" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Jobs" # Used in the UI, ie.: "New Post"
     label_singular: "Job"
-    folder: "content/portfolio/posts" # The path to the folder where the documents are stored
+    folder: "content/portfolio/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - { label: "Job", name: "title", widget: "string" }
@@ -63,11 +63,14 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Nome", name: "title", widget: "string" }
       - { label: "Área", name: "area", widget: "string" }
       - { label: "Foto", name: "foto", widget: "image" }
-  - name: "config"
-    editor:
-      preview: false
-    label: "Opções"
-    folder: "."
-    file: "config.toml"
-    fields:
-      - {label: "Seletiva", name: "params.seletiva", widget: "string", default: true}
+  - label: "Config"
+    name: "configs"
+    files:
+      - name: "config"
+        label: "Opções"
+        file: "config.toml"
+        fields:
+          - name: "params"
+            label: "Seletiva"
+                fields:
+                  - {label: "Enable", name: "seletiva", widget: "boolean"}
