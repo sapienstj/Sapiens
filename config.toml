@@ -28,7 +28,7 @@ enableRobotsTXT = true
 	form_id = ""
 	signature = "https://instagram.com/eubaliver"
 	[permalinks]
-  	posts = "/posts/:filename/"
+  	posts = "/:filename/"
 
 [markup]
   [markup.goldmark]
