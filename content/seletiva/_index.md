@@ -1,12 +1,12 @@
 ---
 title: Seletiva
 ---
-Fala jovens!  
+Fala **jovens**!  
 
-Já pensou em colocar os seus conhecimentos em prática, mas não sabe como? Pois bem, agora chegou o seu momento de brilhar. 
+Já pensou em colocar os **seus conhecimentos em prática**, mas não sabe como? Pois bem, agora chegou o **seu** momento de brilhar. 
 
- A nossa agência experimental de publicidade está em busca de novos talentos para somar a equipe, e o mais legal é que se você for de outro curso da área comunicação também pode se juntar ao time! 
+ A nossa **agência experimental** de publicidade está em busca de novos talentos para somar a equipe, e o mais legal é que se você for de **outro curso** da área comunicação também pode se juntar ao time! 
 
-Se você gostaria de aprender mais através da prática e ao mesmo tempo se divertir, esse é o espaço que estava buscando. Então, não perca tempo e se inscreva para fazer parte do time.  
+Se você gostaria de aprender mais através da prática e ao mesmo tempo se divertir, esse é o espaço que estava buscando. Então, não perca tempo e **se inscreva** para fazer parte do time.  
 
 A nossa equipe mal pode esperar a hora de te receber!
