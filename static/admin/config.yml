@@ -64,10 +64,10 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Área", name: "area", widget: "string" }
       - { label: "Foto", name: "foto", widget: "image" }
   - name: "settings" # Collection name
-    label: "Configurações" # Display label
+    label: "Seletiva" # Display label
     files:
       - file: ".config.toml"
         label: "Configurações"
-        name: "settings"
+        name: "Modo Seletiva "
         fields:
           - { label: "Seletiva", name: "seletiva", widget: "boolean", default: false } # The field for editing the seletiva variable
