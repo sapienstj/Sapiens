@@ -2,7 +2,7 @@
 portfolio: Portfólio
 buttonA: Faça parte
 buttonB: Confira nossos trabalhos
-title: Conheça Sapiens
+title: Meet Sapiens
 flavor_textA: A casa de Ideias
 flavor_textB: Onde as coisas acontecem
 flavor_textC: Em Constante Evolução
