@@ -3,8 +3,9 @@
     <h2 class="section__title">{{ .Title }}</h2>
     <span class="section__subtitle work__subtitle h4 mb-1">{{ .Description }}</span>
     <div class="c-teams px-3">
-    {{ range sort (where .Site.RegularPages "Type" "equipe") ".Params.index" "asc"  }}
-    	{{ if  ne .Title "equipe" }}
+		{{ $teams := (where .Site.RegularPages "Type" "equipe") }}
+		{{ range shuffle $teams }}
+			{{ if  ne .Title "equipe" }}
 		{{ $randomVar := shuffle (slice "#763dab" "#dc3545" "#fab302" "#1c6141" "#437aac") }}
 		{{ $selectedVar := index $randomVar 0 }}
 		    <a
