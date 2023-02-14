@@ -10,7 +10,7 @@
       {{ $randomVar := shuffle (slice "#763dab" "#dc3545" "#fab302" "#1c6141" "#437aac") }}
       {{ $selectedVar := index $randomVar 0 }}
         <a
-          href="/portfolio/{{ .File.BaseFileName }}"
+          href="/portfolio/job/{{ .File.BaseFileName }}"
           class="c-case enter-fade-up enter-delay-1 background-gradient"
           data-color="{{ $selectedVar }}"
         >
