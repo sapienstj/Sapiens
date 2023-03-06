@@ -10,7 +10,16 @@
         </div>
       </div>
     </div>
-    <form name="seletiva" action="https://sapienstj.com.br/sucesso/" method="post" class="contact__form grid" data-netlify="true">
+    {{ if eq .Site.Params.forms_object "Netlify" }}
+    <!-- Netlify forms -->
+    <form name="contact" action="/sucesso/" method="post" class="contact__form grid" data-netlify="true">
+    {{ else if eq .Site.Params.forms_object "Formspree" }}
+    <!-- Formspree forms -->
+    <form name="contact" action="https://formspree.io/f/{{ .Site.Params.form_id }}" class="contact__form grid" method="post">
+    {{ else }}
+    <!-- None -->
+    <form name="contact" action="" class="contact__form grid" method="post">
+    {{ end }}
       <input type="hidden" name="form-name" value="contact" />
       <div class="contact__inputs grid">
         <div class="contact__content">
@@ -22,7 +31,7 @@
           <input type="email" name="email" class="contact__input" required />
         </div>
         <div class="contact__content">
-          <label for="" class="contact__label">Whatsapp</label>
+          <label for="" class="contact__label">Celular(Whatsapp)</label>
           <input type="tel" name="tel" class="contact__input" required />
         </div>
         <div class="contact__content">
