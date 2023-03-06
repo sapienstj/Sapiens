@@ -12,13 +12,13 @@
     </div>
     {{ if eq .Site.Params.forms_object "Netlify" }}
     <!-- Netlify forms -->
-    <form name="seletiva" action="/sucesso/" method="post" class="contact__form grid" data-netlify="true">
+    <form name="seletiva23" action="/sucesso/" method="post" class="contact__form grid" data-netlify="true">
     {{ else if eq .Site.Params.forms_object "Formspree" }}
     <!-- Formspree forms -->
-    <form name="seletiva" action="https://formspree.io/f/{{ .Site.Params.form_id }}" class="contact__form grid" method="post">
+    <form name="seletiva23" action="https://formspree.io/f/{{ .Site.Params.form_id }}" class="contact__form grid" method="post">
     {{ else }}
     <!-- None -->
-    <form name="seletiva" action="/sucesso/" method="post" class="contact__form grid" data-netlify="true">
+    <form name="seletiva23" action="/sucesso/" method="post" class="contact__form grid" data-netlify="true">
     {{ end }}
       <input type="hidden" name="form-name" value="contact" />
       <div class="contact__inputs grid">
