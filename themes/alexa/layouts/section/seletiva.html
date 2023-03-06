@@ -10,26 +10,30 @@
         </div>
       </div>
     </div>
-        <!-- Netlify forms -->
-    <form name="seletiva" method="POST" data-netlify="true">
-      <p>
-        <label>Your Name: <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Your Email: <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <label>Your Role: <select name="role[]" multiple>
-          <option value="leader">Leader</option>
-          <option value="follower">Follower</option>
-        </select></label>
-      </p>
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
+    <form name="seletiva" action="https://sapienstj.com.br/sucesso" method="post" class="contact__form grid" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <div class="contact__inputs grid">
+        <div class="contact__content">
+          <label for="" class="contact__label">Nome</label>
+          <input type="text" name="name" class="contact__input" required />
+        </div>
+        <div class="contact__content">
+          <label for="" class="contact__label">E-mail</label>
+          <input type="email" name="email" class="contact__input" required />
+        </div>
+        <div class="contact__content">
+          <label for="" class="contact__label">Celular(Whatsapp)</label>
+          <input type="tel" name="phone"  id="phone" class="contact__input" required />
+        </div>
+        <div class="contact__content">
+          <label for="" class="contact__label">A Sapiens é feita de ideias, qual é a sua?</label>
+          <textarea cols="0" name="message" rows="7" class="contact__input" required minlength="20" placeholder="Fale um pouco sobre você, o seu curso, o que você sabe fazer/quer aprender e no que você agregaria à nossa agência."></textarea>
+        </div>
+        <div>
+          <button type="submit" class="button button--flex">Enviar<i
+              class="fas fa-paper-plane button__icon"></i><uil-message class="button__icon" /></button>
+        </div>
+      </div>
     </form>
   </div>
 </section>
