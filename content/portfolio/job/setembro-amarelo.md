@@ -2,6 +2,7 @@
 title: Setembro Amarelo
 job_Type: Vídeo
 cliente: Utilidade Pública
+AuthorB: Alice Arievilo
 AuthorC: Beatriz Dimetre e Diego Azevedo
 image: /images/setembro-amarelo.webp
 ---
