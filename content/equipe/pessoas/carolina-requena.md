@@ -1,5 +1,5 @@
 ---
 title: Carolina Requena
 area: Redação
-foto: /images/carol.png
+foto: /images/requena.webp
 ---
